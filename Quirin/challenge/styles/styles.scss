@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    // overflow-x: hidden;
+    background: linear-gradient(to right, #BABD89, #FFD485);
+}
+
+svg {
+    .cloud {
+        fill: white;
+    }
+    .cloud1 {
+        transform: translate(-125%, -10%);
+        transition: transform .5s ease-in-out;
+    }
+    .cloud2 {
+        transform: translate(-115%, 0);
+        transition: transform .5s ease-in-out;
+    }
+    .cloud3 {
+        transform: translate(135%, -20%);
+        transition: transform .5s ease-in-out;
+    }
+}
+
+.wholepage {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    // overflow-x: hidden;
+}
+
+.grosses-x a {
+    color: #DA462F;
+    font-size: 8rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 25%;
+    font-family: monospace;
+    // z-index: -1;
+    right: 20%;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+        color: #DA462F;
+    }
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    .logo {
+        border-bottom: 3px solid transparent;
+        transition: border-bottom-color .3s ease-in;
+        color: #6A3941;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px;
+        &:hover {
+            border-bottom-color: #6A3941;
+            color: #6A3941;
+            svg {
+                .cloud1 {
+                    transform: translate(-8%, -10%);
+                }
+                .cloud2 {
+                    transform: translate(5%, 0);
+                }
+                .cloud3 {
+                    transform: translate(15%, -20%);
+                }
+            }
+        }
+    }
+}
+
+ul.headings {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
+    li {
+        margin: 20px;
+        padding: 0 20px;
+        background-color: #3E282A;
+        width: fit-content;
+    }
+    a {
+        font-family: monospace;
+        color: white;
+        font-size: 3rem;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width: 681px) {
+    ul.headings a {
+        font-size: 2rem;
+    }
+    .grosses-x a {
+        top: 80%;
+    }
+}
+
+// svg:hover .person {
+//     animation: walk 4s forwards;
+// }
+// @keyframes walk {
+//     0% {
+//         transform: translate(0, 0);
+//     }
+//     25% {
+//         transform: translate(10%, 0);
+//     }
+//     50% {
+//         transform: translate(10%, -10%);
+//     }
+//     75% {
+//         transform: translate(100%, -30%);
+//     }
+// }
