@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Postino - Plot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style>
+         :root {
+            --bg-gray: rgb(240, 240, 240);
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .maxwidth {
+            width: clamp(45ch, 50%, 75ch);
+        }
+        
+        .movie-title {
+            padding: 30px;
+        }
+        
+        .topbar {
+            font-size: 2rem;
+            color: black;
+        }
+        
+        .bg-gray {
+            background-color: var(--bg-gray);
+        }
+        
+        .current-page {
+            text-decoration: underline;
+        }
+        
+        .wrapper {
+            display: grid;
+            grid-template-columns: min(20%, 400px) auto;
+            gap: 3em;
+            padding: 30px;
+        }
+        
+        article {
+            border: var(--bg-gray);
+            /* display: flex;
+            align-items: center;
+            flex-flow: column nowrap; */
+        }
+        
+        .hover-fat:hover {
+            font-weight: bold;
+        }
+        
+        .hover-white-bg:hover {
+            background-color: white;
+        }
+        
+        .bg-img {
+            background-image: url('https://images.videociety.de/Background/4BF0ACC8A9EC30F7475688108615C5EFC643D260_1280.jpg');
+            text-shadow: 0 0 2px black;
+        }
+        
+        .not-so-big {
+            max-width: 100%;
+            max-height: 80vh;
+        }
+        
+        .overlay {
+            background-color: rgba(0, 0, 0, .5);
+        }
+        
+        img {
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav justify-content-end topbar bg-gray p-3">
+        <li class="nav-item">
+            <a class="nav-link text-dark" aria-current="page" href="index.html">Plot</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active current-page text-dark" href="actors.html">Actors</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="reviews.html">Reviews</a>
+        </li>
+    </ul>
+
+    <h1 class="display-1 movie-title text-center text-light bg-img">IL POSTINO</h1>
+
+    <div class="wrapper">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item py-3 hover-white-bg bg-gray"><a class="link-dark hover-fat" href="actor1.html">Massimo Troisi</a></li>
+            <li class="list-group-item py-3 hover-white-bg bg-gray"><a class="link-dark hover-fat " href="actor2.html">Philippe Noiret</a></li>
+            <li class="list-group-item py-3 hover-white-bg bg-gray"><a class="link-dark hover-fat" href="actor3.html">Maria Grazia Cucinotta </a></li>
+            <li class="list-group-item active disabled py-3 hover-white-bg bg-gray"><a class="disabled link-dark hover-fat" href="actor4.html">Renato Scarpa</a></li>
+            <li class="list-group-item py-3 hover-white-bg bg-gray"><a class="link-dark hover-fat" href="actor5.html">Mariano Rigillo</a></li>
+        </ul>
+
+        <article>
+
+            <h1 class="">Renato Scarpa</h1>
+
+            <img class="img-fluid" src="https://www.romatoday.it/~media/horizontal-hi/68476607276853/renato-scarpa-2.jpg" alt="Massimp">
+
+            <section class="mt-4 maxwidth">
+                <p>Renato Scarpa (14 September 1939 – 30 December 2021) was an Italian film actor. He appeared in 85 films from 1969 to 2019.[1][2]</p>
+                <p>Scarpa died on 30 December 2021, at the age of 82</p>
+
+            </section>
+        </article>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Postino - Plot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style>
+         :root {
+            --bg-gray: rgb(240, 240, 240);
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .maxwidth {
+            width: clamp(45ch, 50%, 75ch);
+        }
+        
+        .movie-title {
+            padding: 30px;
+        }
+        
+        .topbar {
+            font-size: 2rem;
+            color: black;
+        }
+        
+        .bg-gray {
+            background-color: var(--bg-gray);
+        }
+        
+        .current-page {
+            text-decoration: underline;
+        }
+        
+        .wrapper {
+            display: grid;
+            grid-template-columns: min(20%, 400px) auto;
+            gap: 3em;
+            padding: 30px;
+        }
+        
+        article {
+            border: var(--bg-gray);
+            /* display: flex;
+            align-items: center;
+            flex-flow: column nowrap; */
+        }
+        
+        .hover-fat:hover {
+            font-weight: bold;
+        }
+        
+        .hover-white-bg:hover {
+            background-color: white;
+        }
+        
+        .bg-img {
+            background-image: url('https://images.videociety.de/Background/4BF0ACC8A9EC30F7475688108615C5EFC643D260_1280.jpg');
+            text-shadow: 0 0 2px black;
+        }
+        
+        .not-so-big {
+            max-width: 100%;
+            max-height: 80vh;
+        }
+        
+        .overlay {
+            background-color: rgba(0, 0, 0, .5);
+        }
+        
+        img {
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav justify-content-end topbar bg-gray p-3">
+        <li class="nav-item">
+            <a class="nav-link text-dark" aria-current="page" href="index.html">Plot</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active current-page text-dark" href="actors.html">Actors</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="reviews.html">Reviews</a>
+        </li>
+    </ul>
+
+    <h1 class="display-1 movie-title text-center text-light bg-img">IL POSTINO</h1>
+
+    <div class="wrapper">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item py-3 hover-white-bg bg-gray"><a class="link-dark hover-fat" href="actor1.html">Massimo Troisi</a></li>
+            <li class="list-group-item py-3 hover-white-bg bg-gray"><a class="link-dark hover-fat" href="actor2.html">Philippe Noiret</a></li>
+            <li class="list-group-item py-3 hover-white-bg bg-gray"><a class="link-dark hover-fat" href="actor3.html">Maria Grazia Cucinotta </a></li>
+            <li class="list-group-item py-3 hover-white-bg bg-gray"><a class="link-dark hover-fat" href="actor4.html">Renato Scarpa</a></li>
+            <li class="list-group-item py-3 hover-white-bg bg-gray"><a class="link-dark hover-fat" href="actor5.html">Mariano Rigillo</a></li>
+        </ul>
+
+        <article>
+
+            <h1 class="">Actors</h1>
+
+            <section class="mt-4">
+                <div id="carouselExampleCaptions" class="carousel slide bg-gray" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Troisi.jpg/440px-Troisi.jpg" class="d-block w-100 not-so-big" alt="Massimo Troisi">
+                            <div class="carousel-caption overlay d-none d-md-block">
+                                <h5><a href="actor1.html" class="link-light">Massimo Troisi</a></h5>
+                                <p>Massimo Troisi as Mario Ruoppolo.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Philippe_Noiret_2000_crop.jpg/440px-Philippe_Noiret_2000_crop.jpg" class="d-block w-100 not-so-big" alt="Philippe Noiret">
+                            <div class="carousel-caption overlay d-none d-md-block">
+                                <h5><a href="actor2.html" class="link-light">Philippe Noiret</a></h5>
+                                <p>Philippe Noiret as Pablo Neruda.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Maria_Grazia_Cucinotta.jpg" class="d-block w-100 not-so-big" alt="...">
+                            <div class="carousel-caption overlay d-none d-md-block">
+                                <h5><a href="actor3.html" class="link-light">Maria Grazia Cucinotta</a></h5>
+                                <p>Maria Grazia Cucinotta as Beatrice Russo.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Renato_Scarpa_-_foto_Augusto_De_Luca.jpg/440px-Renato_Scarpa_-_foto_Augusto_De_Luca.jpg" class="d-block w-100 not-so-big" alt="...">
+                            <div class="carousel-caption overlay d-none d-md-block">
+                                <h5><a href="actor4.html" class="link-light">Renato Scarpa</a></h5>
+                                <p>Renato Scarpa as The Telegrapher.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Rigillo.jpg" class="d-block w-100 not-so-big" alt="...">
+                            <div class="carousel-caption overlay d-none d-md-block">
+                                <h5><a href="actor5.html" class="link-light">Mariano Rigillo</a></h5>
+                                <p>Mariano Rigillo as Di Cosimo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </article>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>

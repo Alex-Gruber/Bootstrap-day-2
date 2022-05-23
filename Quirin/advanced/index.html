@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Postino - Plot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style>
+         :root {
+            --bg-gray: rgb(240, 240, 240);
+        }
+        
+        .maxwidth {
+            width: clamp(45ch, 50%, 75ch);
+        }
+        
+        .movie-title {
+            padding: 30px;
+        }
+        
+        .topbar {
+            font-size: 2rem;
+            color: black;
+        }
+        
+        .bg-gray {
+            background-color: var(--bg-gray);
+        }
+        
+        .current-page {
+            text-decoration: underline;
+        }
+        
+        .wrapper {
+            display: grid;
+            grid-template-columns: min(20%, 400px) auto;
+            gap: 3em;
+            padding: 30px;
+        }
+        
+        article {
+            border: var(--bg-gray);
+            /* display: flex;
+            align-items: center;
+            flex-flow: column nowrap; */
+        }
+        
+        .hover-fat:hover {
+            font-weight: bold;
+        }
+        
+        .hover-white-bg:hover {
+            background-color: white;
+        }
+        
+        .bg-img {
+            background-image: url('https://images.videociety.de/Background/4BF0ACC8A9EC30F7475688108615C5EFC643D260_1280.jpg');
+            text-shadow: 0 0 2px black;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav justify-content-end topbar bg-gray p-3">
+        <li class="nav-item">
+            <a class="nav-link active current-page text-dark" aria-current="page" href="index.html">Plot</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="actors.html">Actors</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="reviews.html">Reviews</a>
+        </li>
+    </ul>
+
+    <h1 class="display-1 movie-title text-center text-light bg-img">IL POSTINO</h1>
+
+    <div class="wrapper">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item py-3 hover-white-bg bg-gray"><a class="link-dark hover-fat" href="actor1.html">Massimo Troisi</a></li>
+            <li class="list-group-item py-3 hover-white-bg bg-gray"><a class="link-dark hover-fat " href="actor2.html">Philippe Noiret</a></li>
+            <li class="list-group-item py-3 hover-white-bg bg-gray"><a class="link-dark hover-fat" href="actor3.html">Maria Grazia Cucinotta </a></li>
+            <li class="list-group-item py-3 hover-white-bg bg-gray"><a class="link-dark hover-fat" href="actor4.html">Renato Scarpa</a></li>
+            <li class="list-group-item py-3 hover-white-bg bg-gray"><a class="link-dark hover-fat" href="actor5.html">Mariano Rigillo</a></li>
+        </ul>
+
+        <article>
+
+            <h1 class="">Plot</h1>
+
+            <section class="mt-4 maxwidth">
+                <p>In 1950, Pablo Neruda, the famous Chilean poet, is exiled to a small island in Italy for political reasons. His wife accompanies him. On the island, a local, Mario Ruoppolo, is dissatisfied with being a fisherman like his father. Mario
+                    looks for other work and is hired as a temporary postman, with Neruda as his only customer. He uses his bicycle to hand deliver Neruda's mail. (The island seems to have no cars). Though poorly educated, the postman eventually befriends
+                    Neruda and becomes further influenced by Neruda's political views and poetry.</p>
+                <p>Meanwhile, Mario falls in love with a beautiful young lady, Beatrice Russo, who works in her aunt's village cafe. He is shy with her, but he enlists Neruda's help. Mario constantly asks Neruda if particular metaphors that he uses are suitable
+                    for his poems. Mario is able to better communicate with Beatrice and express his love through poetry. Despite the aunt's strong disapproval of Mario, because of his sensual poetry (which turns out to be largely stolen from Neruda),
+                    Beatrice responds favourably.</p>
+                <p>The two are married. The priest refuses to allow Mario to have Neruda as his best man because of politics; however, this is soon resolved. This was because Di Cosimo was the politician in office in the area with the Christian Democrats.
+                    At the wedding, Neruda receives the welcome news that there is no longer a Chilean warrant for his arrest so he returns to Chile.</p>
+                <p>Mario writes a letter but never gets any reply. Several months later, he receives a letter from Neruda. However, to his dismay, it is actually from his secretary, asking Mario to send Neruda's old belongings back to Chile. While there
+                    Mario comes upon an old phonograph and listens to the song he first heard when he met Neruda. Moved, he makes recordings of all the beautiful sounds on the island onto a cassette including the heartbeat of his soon-to-be-born child.</p>
+                <p>Five years later, Neruda finds Beatrice and her son, Pablito (named in honour of Neruda) in the same old inn. From her, he discovers that Mario had been killed before their son was born. Mario had been scheduled to recite a poem he had
+                    composed at a large communist gathering in Naples; the demonstration was violently broken up by the police. She gives Neruda the recordings of village sounds that Mario had made for him. The film ends with Neruda walking on the beach
+                    where he used to talk with Mario, showing at the same time the communist gathering in which Mario was killed.</p>
+            </section>
+        </article>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>
